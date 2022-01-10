@@ -1,8 +1,15 @@
 {
-    "tabWidth": 4,
-    "singleQuote": true,
     "semi": true,
-    "no-prose-wrap": true,
     "trailingComma": "all",
-    "extends": ["tslint:latest", "tslint-config-prettier"]
+    "singleQuote": true,
+    "printWidth": 80,
+    "useTabs": false,
+    "tabWidth": 4,
+    "importOrder": [
+        "^(?!Laya|laya|honor|comMan)([\\w-]+)(/([\\w-]+))*$",
+        "^(laya|Laya|honor|comMan)(.*)$",
+        "^@app/(.*)$",
+        "^([./])(.*)$"
+    ],
+    "importOrderSeparation": true
 }

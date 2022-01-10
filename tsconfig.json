@@ -2,14 +2,21 @@
     "compilerOptions": {
         "allowJs": true,
         "experimentalDecorators": true,
-        "module": "commonjs",
-        "moduleResolution": "node",
-        "rootDir": "./",
+        "module": "esnext",
+        "resolveJsonModule": true,
+        "target": "es6",
         "skipDefaultLibCheck": true,
         "skipLibCheck": true,
         "sourceMap": true,
-        "target": "es6",
-        "watch": true
+        "watch": true,
+        "moduleResolution": "node",
+        "esModuleInterop": true,
+        "baseUrl": "./",
+        "noEmit": true,
+        "paths": {
+            "*": ["node_modules/*", "libs/*", "library/*"],
+            "@app/*": ["src/*"]
+        }
     },
-    "exclude": ["node_modules", "dist"]
+    "include": ["./src", "./test", "./lightCanvas"]
 }

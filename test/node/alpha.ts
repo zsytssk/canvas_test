@@ -6,7 +6,7 @@ export async function testAlphaGrid(stage: Stage) {
     for (let i = 0; i < num; i++) {
         for (let j = 0; j < num; j++) {
             const test = new Image();
-            test.skin = './image/test.jpg';
+            test.skin = './image/test.png';
             test.x = i * 60;
             test.y = j * 60;
             test.width = 50;
@@ -22,7 +22,7 @@ export async function testAlphaRecursive(stage: Stage) {
     for (let i = 0; i < num; i++) {
         for (let j = 0; j < num; j++) {
             const test = new Image();
-            test.skin = './image/test.jpg';
+            test.skin = './image/test.png';
             test.x = i * 60;
             test.y = j * 60;
             test.width = 50;
