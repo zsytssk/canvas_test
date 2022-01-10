@@ -69,7 +69,7 @@ export async function testPivot2(stage: Stage) {
     for (let i = 0; i < num; i++) {
         for (let j = 0; j < num; j++) {
             const test = new Image();
-            test.skin = './image/test.png';
+            test.skin = './image/test.jpg';
             test.x = (i + 1) * 60;
             test.y = (j + 1) * 60;
             test.width = 50;
