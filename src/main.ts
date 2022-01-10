@@ -14,5 +14,5 @@ function start(width: number, height: number, start_opt = {} as StartPot) {
 
     return startScene(stage);
 }
-start(1334, 750);
+// start(1334, 750);
 // export { load, xmlToNode, start, destroy };

@@ -1,5 +1,7 @@
 import { Image } from 'lightCanvas/node/image';
 import { Stage } from 'lightCanvas/node/stage';
+import { tweenProps } from 'lightCanvas/utils/tweenProps';
+import { setProps } from 'lightCanvas/utils/utils';
 
 export async function drawImage(stage: Stage) {
     const bg = new Image();
@@ -45,18 +47,18 @@ export async function drawImage(stage: Stage) {
     progress_inner.y = 1;
     progress_inner.height = 8;
     progress_inner.sizeGrid = '1, 4, 1, 4';
-    // progress_inner.width = progress_width;
     progress_bg.addChild(progress_inner);
 
     let i = 0;
-    const interval = setInterval(() => {
-        i += 20;
-        progress_inner.width = i;
-        if (i > progress_width) {
-            clearInterval(interval);
-            i = 0;
-        }
-    }, 100);
-
-    console.log(stage);
+    tweenProps({
+        start_props: { width: 0 },
+        end_props: { width: progress_width },
+        callback: () => {
+            alert('1');
+        },
+        step_fun: (props: ClassProps<Node>) => {
+            setProps(progress_inner, props);
+        },
+        time: 3000,
+    });
 }
