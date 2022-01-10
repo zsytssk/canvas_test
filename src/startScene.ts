@@ -65,6 +65,8 @@ export function startScene(stage: Stage) {
             pop.once('close', close_fun);
         }
     };
+
+    console.log(`test:>`, pop);
     tweenProps({
         start_props: { alpha: 1 },
         end_props: { alpha: 0 },

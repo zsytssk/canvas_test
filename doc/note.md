@@ -1,3 +1,5 @@
+-   @ques 用 solidjs 做一个编辑器？
+
 -   @ques 3d 最复杂可能就是光照了...
 
 -   @ques skew 如何实现
@@ -183,7 +185,7 @@ export function callThisFun(target: Node, key, descriptor) {
         get: () => {
             return target[`_${key}`];
         },
-        set: val => {
+        set: (val) => {
             target[`_${key}`] = val;
         },
     };

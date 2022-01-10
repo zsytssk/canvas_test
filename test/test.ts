@@ -6,4 +6,4 @@ function main() {
     const { stage } = init(1334, 750, { bg_color: '#fff' });
     testPivot(stage);
 }
-main();
+// main();

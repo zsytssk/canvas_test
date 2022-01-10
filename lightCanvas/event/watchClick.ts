@@ -1,4 +1,3 @@
-import { Stage } from '../node/stage';
 import { setProps } from '../utils/utils';
 import { triggerPosEvent } from './triggerEvent';
 
@@ -9,10 +8,10 @@ type TouchData = {
     status: Status;
     moved: boolean;
 };
-type Stage = {
+type State = {
     canvas: HTMLCanvasElement;
 };
-let state = {} as Stage;
+let state = {} as State;
 let touch_data = {} as TouchData;
 export function watchClick(canvas: HTMLCanvasElement) {
     canvas.addEventListener('touchstart', onTouchStart, false);
@@ -20,6 +19,7 @@ export function watchClick(canvas: HTMLCanvasElement) {
     canvas.addEventListener('touchend', onTouchEnd, false);
     canvas.addEventListener('touchcancel', onTouchEnd, false);
 
+    console.log(`test:>`, canvas);
     setProps(state, {
         canvas,
     });
@@ -42,7 +42,8 @@ function onTouchStart(evt: TouchEvent) {
     }
     evt.stopPropagation();
     evt.preventDefault();
-    const { clientX: x, clientY: y } = evt.touches[0];
+    let { clientX: x, clientY: y } = evt.touches[0];
+
     touch_data.status = 'start';
     touch_data.start_pos = {
         x,

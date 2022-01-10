@@ -13,7 +13,7 @@
     "scripts": {
         "start": "webpack serve --progress --mode development",
         "test": "webpack --progress --mode development",
-        "prod": "webpack --progress --mode production"
+        "build": "webpack --progress --mode production"
     },
     "devDependencies": {
         "eslint": "^8.3.0",
