@@ -15,7 +15,7 @@ let common_config = {
     resolve: {
         modules: [path.resolve('node_modules'), path.resolve('assets')],
         alias: {
-            lightCanvas: path.resolve(__dirname, './lightCanvas'),
+            lightCanvas: path.resolve(__dirname, 'lightCanvas'),
         },
         extensions: ['.ts', '.js', '.cjs', '.json'],
     },

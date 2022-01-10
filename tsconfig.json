@@ -14,8 +14,9 @@
         "baseUrl": "./",
         "noEmit": true,
         "paths": {
-            "*": ["node_modules/*", "libs/*", "library/*"],
-            "@app/*": ["src/*"]
+            "*": ["./node_modules/*"],
+            "lightCanvas/*": ["./lightCanvas/*"],
+            "@app/*": ["./src/*"]
         }
     },
     "include": ["./src", "./test", "./lightCanvas"]

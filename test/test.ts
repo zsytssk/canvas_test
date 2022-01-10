@@ -1,4 +1,4 @@
-import { init } from '../lightCanvas/main';
+import { init } from 'lightCanvas/main';
 import { testPivot2 } from './node/pivot';
 
 function main() {

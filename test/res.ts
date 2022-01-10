@@ -1,4 +1,4 @@
-import { LoadItem } from '../lightCanvas/utils/load';
+import { LoadItem } from 'lightCanvas/utils/load';
 
 export const res: LoadItem[] = [
     {

@@ -1,12 +1,12 @@
-import { Dialog } from '../lightCanvas/node/component/dialog';
-import { Graphics } from '../lightCanvas/node/graphics';
-import { Image } from '../lightCanvas/node/image';
-import { Node } from '../lightCanvas/node/node';
-import { Stage } from '../lightCanvas/node/stage';
-import { Text } from '../lightCanvas/node/text';
-import { convertXMLToNode } from '../lightCanvas/utils/convertXmlToNode';
-import { tweenProps } from '../lightCanvas/utils/tweenProps';
-import { setProps } from '../lightCanvas/utils/utils';
+import { Dialog } from 'lightCanvas/node/component/dialog';
+import { Graphics } from 'lightCanvas/node/graphics';
+import { Image } from 'lightCanvas/node/image';
+import { Node } from 'lightCanvas/node/node';
+import { Stage } from 'lightCanvas/node/stage';
+import { Text } from 'lightCanvas/node/text';
+import { convertXMLToNode } from 'lightCanvas/utils/convertXmlToNode';
+import { tweenProps } from 'lightCanvas/utils/tweenProps';
+import { setProps } from 'lightCanvas/utils/utils';
 import { pop as pop_xml } from './xml';
 
 export type NodeData = {

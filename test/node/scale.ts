@@ -1,5 +1,5 @@
-import { Image } from '../../lightCanvas/node/image';
-import { Stage } from '../../lightCanvas/node/stage';
+import { Image } from 'lightCanvas/node/image';
+import { Stage } from 'lightCanvas/node/stage';
 
 export function testScale(stage: Stage) {
     const sun = new Image();

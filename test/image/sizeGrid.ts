@@ -1,5 +1,5 @@
-import { Image } from '../../lightCanvas/node/image';
-import { Stage } from '../../lightCanvas/node/stage';
+import { Image } from 'lightCanvas/node/image';
+import { Stage } from 'lightCanvas/node/stage';
 
 export async function drawImage(stage: Stage) {
     const grid = new Image();
