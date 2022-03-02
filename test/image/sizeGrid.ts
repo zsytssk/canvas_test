@@ -14,8 +14,8 @@ export async function testSizeGrid(stage: Stage) {
     stage.addChild(grid);
 
     tweenProps({
-        start_props: { width: 100, height: 100 },
-        end_props: { width: 500, height: 300 },
+        start_props: { width: 32, height: 32 },
+        end_props: { width: 700, height: 500 },
         callback: () => {},
         step_fun: (props: ClassProps<Node>) => {
             setProps(grid, props);
