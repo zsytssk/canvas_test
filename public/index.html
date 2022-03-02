@@ -4,7 +4,65 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <style>
+            .ctrl {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                z-index: 10001;
+            }
+        </style>
         <title>Document</title>
     </head>
-    <body></body>
+    <body>
+        <div class="ctrl">
+            <button class="btn1">测试图片</button>
+            <button class="btn2">测试alpha</button>
+            <button class="btn3">测试pivot1</button>
+            <button class="btn31">测试pivot2</button>
+            <button class="btn4">测试pos</button>
+            <button class="btn5">测试scale</button>
+            <button class="btn6">测试text</button>
+            <button class="btn7">测试sizeGrid</button>
+            <button class="btn8">测试Dialog</button>
+        </div>
+        <script>
+            const btn1 = document.querySelector('.btn1');
+            const btn2 = document.querySelector('.btn2');
+            const btn3 = document.querySelector('.btn3');
+            const btn31 = document.querySelector('.btn31');
+            const btn4 = document.querySelector('.btn4');
+            const btn5 = document.querySelector('.btn5');
+            const btn6 = document.querySelector('.btn6');
+            const btn7 = document.querySelector('.btn7');
+            const btn8 = document.querySelector('.btn8');
+            btn1.addEventListener('click', () => {
+                test.drawImage();
+            });
+            btn2.addEventListener('click', () => {
+                test.testAlphaGrid();
+            });
+            btn3.addEventListener('click', () => {
+                test.testPivot();
+            });
+            btn31.addEventListener('click', () => {
+                test.testPivot2();
+            });
+            btn4.addEventListener('click', () => {
+                test.testPos();
+            });
+            btn5.addEventListener('click', () => {
+                test.testScale();
+            });
+            btn6.addEventListener('click', () => {
+                test.testText();
+            });
+            btn7.addEventListener('click', () => {
+                test.testSizeGrid();
+            });
+            btn8.addEventListener('click', () => {
+                test.testDialog();
+            });
+        </script>
+    </body>
 </html>

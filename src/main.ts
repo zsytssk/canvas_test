@@ -1,5 +1,4 @@
 import { destroy, init, Opt } from 'lightCanvas/main';
-import { load } from 'lightCanvas/utils/load';
 import { setLogo } from './setLogo';
 import { NodeData, startScene, xmlToNode } from './startScene';
 

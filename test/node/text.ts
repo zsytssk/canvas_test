@@ -3,16 +3,8 @@ import { Stage } from 'lightCanvas/node/stage';
 import { Text } from 'lightCanvas/node/text';
 
 export function testText(stage: Stage) {
-    const moon = new Image();
-    moon.width = 250;
-    moon.height = 100;
-    moon.x = 100;
-    moon.y = 100;
-    moon.skin = './image/Canvas_sun.png';
-    stage.addChild(moon);
-
     const hello = new Text();
-    hello.text = 'www';
+    hello.text = 'hello world';
     hello.font = 'Arial';
     hello.align = 'left';
     hello.valign = 'bottom';
